@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/info_diskusi/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Detail</title>
+  </head>
+  <body>
+    <!--===== BAGIAN ATAS (KEPALA) =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo"
+            ><img src="ico/apple-touch-icon-60x60.png" alt="logo"
+          /></a>
+        </div>
+        <div><img src="ico/darkmode.png" id="icon" alt="icon" /></div>
+        <div>
+          <a href="bot.html" class="nav__link"
+            ><img src="ico/bot.png" alt="bot"
+          /></a>
+        </div>
+        <a href="form.html" class="button">Masuk</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="diskusi.html" class="nav__link">Diskusi</a>
+            </li>
+            <li class="nav__item">
+              <a href="info.html" class="nav__link">Informasi</a>
+            </li>
+            <li class="nav__item">
+              <a href="kuis.html" class="nav__link">Kuis</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <div class="container">
+        <!-- Topik utama-->
+        <div class="topic-container">
+          <!-- Penulis -->
+          <div class="head">
+            <div class="authors">Penulis</div>
+            <div class="content">Topik: konten acak (dibaca 1325 kali)</div>
+          </div>
+
+          <div class="body">
+            <div class="authors">
+              <div class="username"><a href="">Username</a></div>
+              <div>Fitra</div>
+              <img src="ico/mstile-70x70.png" alt="" />
+              <div>Posts: <u>45</u></div>
+              <div>Points: <u>4586</u></div>
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <br />
+              <hr />
+              Salam
+              <br />
+              <div class="comment">
+                <button onclick="showComment()">Komentar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment-area hide" id="reply-area">
+          <textarea
+            name="reply"
+            id=""
+            placeholder="ketik disini ... "
+          ></textarea>
+          <input type="submit" value="kirim" />
+        </div>
+
+        <!-- Komentar -->
+        <div class="comments-container">
+          <div class="body">
+            <div class="authors">
+              <div class="username"><a href="">Username yang lain</a></div>
+              <div>Fitra</div>
+              <img src="ico/mstile-70x70.png" alt="" />
+              <div>Posts: <u>45</u></div>
+              <div>Points: <u>4586</u></div>
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <br />
+              <hr />
+              Salam
+              <br />
+              <div class="comment">
+                <button onclick="showComment()">Komentar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment-area hide" id="reply-area">
+          <textarea
+            name="reply"
+            id=""
+            placeholder="ketik disini ... "
+          ></textarea>
+          <input type="submit" value="kirim" />
+        </div>
+
+        <!-- Komentar lainnya -->
+        <div class="comments-container">
+          <div class="body">
+            <div class="authors">
+              <div class="username"><a href="">Username yang lain</a></div>
+              <div>Fitra</div>
+              <img src="ico/mstile-70x70.png" alt="" />
+              <div>Posts: <u>45</u></div>
+              <div>Points: <u>4586</u></div>
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <br />
+              <hr />
+              Salam
+              <br />
+              <div class="comment">
+                <button onclick="showComment()">Komentar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment-area hide" id="reply-area">
+          <textarea
+            name="reply"
+            id=""
+            placeholder="ketik disini ... "
+          ></textarea>
+          <input type="submit" value="kirim" />
+        </div>
+      </div>
+    </main>
+
+    <!--===== BAGIAN BAWAH (KAKI) =====-->
+    <footer class="footer">
+      <p class="footer__title">Fitra Ilyasa</p>
+      <div class="footer__social">
+        <a
+          href="https://facebook.com/fitrailyasa12"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a
+          href="https://instagram.com/fitrailyasa"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          href="https://twitter.com/fitrailyasa12"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+        <a
+          href="https://youtube.com/c/fitrailyasa"
+          target="_blank"
+          class="footer__icon"
+          ><i class="bx bxl-youtube"></i
+        ></a>
+      </div>
+      <p>&#169; 2019-2021 || Fitra Ilyasa</p>
+    </footer>
+
+    <!--===== JAVASCRIPT =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
