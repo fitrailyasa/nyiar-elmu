@@ -94,34 +94,30 @@
     />
 
     <script>
-      var know = {
-        Halo: "Hai",
-        Hai: "Halo",
+      var msg = {
+        HALO: "Hai!",
+		HALLO: "Hai!",
+        HAI: "Halo!",
         P: "Iya, kenapa?",
-        Assalamualaikum: "Waalaikumsalam",
-        "Selamat pagi": "Pagi!",
-        "Selamat siang": "Siang!",
-        "Selamat sore": "Sore!",
-        "Selamat malam": "Malam!",
-        "Kamu siapa?": "Halo, saya Dicobot!",
-        "Nama kamu siapa?": "Hai, nama saya Dicobot!",
-        Dicobot: "Iya, ada",
-      };
+        ASSALAMUALAIKUM: "Waalaikumsalam",
+		"NAMA KAMU SIAPA?": "Nama saya Dico"
+      };	  
 
       function talk() {
         var user = document.getElementById("data").value;
+		var kapital_user = user.toUpperCase();
         document.getElementById("chatLog").innerHTML +=
-          "<div class='user-inbox inbox'><div class='msg-header'><p>" +
+          '<div class="user-inbox inbox"><div class="msg-header"><p>' +
           user +
-          "</p></div></div>";
-        if (user in know) {
+          '</p></div></div>';
+        if (kapital_user in msg) {
           document.getElementById("chatLog").innerHTML +=
-            '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>' +
-            know[user] +
+            '<div class="bot-inbox inbox"><div class="msg-header"><p>' +
+            msg[kapital_user] +
             "</p></div></div>";
         } else {
           document.getElementById("chatLog").innerHTML +=
-            '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>Maaf saya tidak mengerti apa yang anda katakan.</p></div></div>';
+            '<div class="bot-inbox inbox"><div class="msg-header"><p>Maaf saya tidak mengerti apa yang anda katakan.</p></div></div>';
         }
       }
     </script>
@@ -171,25 +167,21 @@
       <section class="home bd-grid" id="home">
         <div class="wrapper">
           <div class="title">DICOBOT</div>
-          <div class="form">
+          <div class="form" id="chatLog">
             <div class="bot-inbox inbox">
-              <div class="icon" href="../ico/favicon-32x32.png">
-                <i class="fas fa-user"></i>
-              </div>
-              <div class="msg-header" id="chatLog">
-                <p>Hai, ada yang bisa saya bantu?</p>
+              <div class="msg-header">
+                <p>Halo, ada yang bisa saya bantu?</p>
               </div>
             </div>
           </div>
-          <div class="typing-field" id="chatLog">
+          <div class="typing-field">
             <div class="input-data" onkeydown="if(event.keyCode == 13){talk()}">
               <input
                 id="data"
                 type="text"
-                placeholder="Type something here.."
+                placeholder="Ketik sesuatu.."
                 required
               />
-              <button id="send-btn">Send</button>
             </div>
           </div>
         </div>
