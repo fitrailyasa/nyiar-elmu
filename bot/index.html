@@ -97,11 +97,16 @@
       var know = {
         Halo: "Hai",
         Hai: "Halo",
-        "Nama kamu siapa?": "Hai, saya Dicobot!",
+        P: "Iya, kenapa?",
+        Assalamualaikum: "Waalaikumsalam",
+        "Selamat pagi": "Pagi!",
+        "Selamat siang": "Siang!",
+        "Selamat sore": "Sore!",
+        "Selamat malam": "Malam!",
+        "Kamu siapa?": "Halo, saya Dicobot!",
+        "Nama kamu siapa?": "Hai, nama saya Dicobot!",
         Dicobot: "Iya, ada",
       };
-
-      know.toLowerCase();
 
       function talk() {
         var user = document.getElementById("data").value;
@@ -168,7 +173,7 @@
           <div class="title">DICOBOT</div>
           <div class="form">
             <div class="bot-inbox inbox">
-              <div class="icon">
+              <div class="icon" href="../ico/favicon-32x32.png">
                 <i class="fas fa-user"></i>
               </div>
               <div class="msg-header" id="chatLog">
