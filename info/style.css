@@ -1,0 +1,352 @@
+/*===== FONT GOOGLE =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*===== VARIABEL CSS =====*/
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+}
+
+/*===== Warna =====*/
+:root {
+  --first-color: #dc143c;
+  --second-color: #808080;
+  --third-color: #ffffff;
+  --fourth-color: #999999;
+}
+.darkmode {
+  --first-color: #dc143c;
+  --second-color: #eaeaea;
+  --third-color: #101010;
+  --fourth-color: #bbbbbb;
+}
+
+/*===== Font Tipografi =====*/
+:root {
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*===== Margin =====*/
+:root {
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+/*===== z index =====*/
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*===== BASIS =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  background-color: var(--third-color);
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* info.html */
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.subforum {
+  margin-top: 10px;
+}
+
+.subforum-title {
+  background-color: var(--third-color);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 4px;
+}
+
+.subforum-row {
+  display: grid;
+  grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum-column {
+  padding: 10px;
+  margin: 4px;
+  border-radius: 5px;
+  background-color: var(--third-color);
+}
+
+.subforum-description * {
+  margin-block: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subforum-icon i {
+  font-size: 45px;
+}
+
+.subforum-devider {
+  display: none;
+}
+
+/* Untuk HP */
+@media screen and (max-width: 460px) {
+  .container {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 65% 35%;
+  }
+
+  .subforum-devider {
+    display: block;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(190, 190, 190, 0),
+      rgba(255, 255, 255, 0.75),
+      rgba(190, 190, 190, 0)
+    );
+  }
+}
+
+/* untuk tablet */
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 10% 60% 10% 20%;
+  }
+
+  .subforum-icon i {
+    font-size: 35px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+}
+
+.chart {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* diskusi.html */
+
+.table-head {
+  display: flex;
+}
+
+.table-head div {
+  padding: 5px;
+  margin: 2px;
+  background-color: var(--third-color);
+  font-weight: bold;
+}
+
+.table-head .status {
+  text-align: center;
+  flex: 5%;
+}
+
+.table-head .subjects {
+  flex: 50%;
+}
+
+.table-head .replies {
+  text-align: center;
+  flex: 10%;
+}
+
+.table-head .last-reply {
+  text-align: center;
+  flex: 15%;
+}
+
+.table-row {
+  display: flex;
+}
+
+.table-row .status,
+.table-row .subjects,
+.table-row .replies,
+.table-row .last-reply {
+  padding: 5px;
+  margin: 2px;
+  background-color: var(--third-color);
+}
+
+.table-row .status {
+  flex: 5%;
+  font-size: 30px;
+  text-align: center;
+  color: var(--first-color);
+}
+
+.table-row .subjects {
+  flex: 50%;
+}
+
+.table-row .replies {
+  text-align: center;
+  flex: 10%;
+}
+
+.table-row .last-reply {
+  text-align: center;
+  flex: 15%;
+}
+
+/* Halaman*/
+
+.pagination {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.pagination a {
+  color: var(--fisrt-color);
+  margin-inline: 5px;
+  padding: 5px 10px;
+  border: solid 0.5px var(--fourth-color);
+}
+
+.pagination a:hover {
+  opacity: 0.5;
+}
+
+.note {
+  background-color: var(--third-color);
+  display: block;
+}
+
+.note span {
+  font-size: 20px;
+  margin-block: 5px;
+}
+
+/*detail.html*/
+
+.head {
+  display: flex;
+  background-color: var(--third-color);
+  padding: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.authors {
+  flex: 20%;
+}
+
+.content {
+  flex: 80%;
+}
+
+.body {
+  display: flex;
+  background-color: var(--third-color);
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.body .authors .username {
+  font-size: 20px;
+}
+
+.body .authors img {
+  max-width: 50px;
+  max-height: 80px;
+}
+
+.body .content .comment button {
+  border: none;
+  padding: 10px;
+  font-weight: bolder;
+  box-shadow: 4px 6px var(--fourth-color);
+  cursor: pointer;
+  float: right;
+}
+
+/* Komentar */
+.comment-area {
+  margin-bottom: 50px;
+}
+
+.comment-area textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+}
+
+.comment-area input {
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.comment-area input:hover {
+  border: solid 1px #000000;
+}

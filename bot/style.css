@@ -75,7 +75,7 @@ a {
   width: 100%;
   background: var(--third-color);
   border-radius: 5px;
-  border: 1px solid lightgrey;
+  border: 1px solid maroon;
   border-top: 0px;
 }
 .wrapper .title {
@@ -100,7 +100,11 @@ a {
   align-items: baseline;
 }
 .wrapper .form .user-inbox {
-  justify-content: flex-end;
+  justify-content: right;
+  margin: 13px 0;
+}
+.wrapper .form .bot-inbox {
+  justify-content: left;
   margin: 13px 0;
 }
 .wrapper .form .inbox .icon {
@@ -126,7 +130,7 @@ a {
   word-break: break-all;
 }
 .form .user-inbox .msg-header p {
-  color: #333;
+  color: #fff;
   background: var(--fourth-color);
 }
 .wrapper .typing-field {
