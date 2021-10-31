@@ -89,23 +89,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
 
     <script>
       var msg = {
         HALO: "Hai!",
-		HALLO: "Hai!",
+		    HALLO: "Hai!",
         HAI: "Halo!",
+        HI: "Halo!",
         P: "Iya, kenapa?",
         ASSALAMUALAIKUM: "Waalaikumsalam",
-		"NAMA KAMU SIAPA?": "Nama saya Dico"
+		    "NAMA KAMU SIAPA?": "Nama saya Dico!",
+        "LAGI APA?": "Kepo!",
+        "LAGI DIMANA?": "Lubuk hatimu wkwkwkw...",
+        "UDAH MAKAN?": "Ciee perhatiaaannn...!!!",
+        "SUDAH MAKAN?": "Ciee perhatiaaannn...!!!",
       };	  
 
       function talk() {
         var user = document.getElementById("data").value;
-		var kapital_user = user.toUpperCase();
+		    var kapital_user = user.toUpperCase();
         document.getElementById("chatLog").innerHTML +=
           '<div class="user-inbox inbox"><div class="msg-header"><p>' +
           user +
@@ -135,9 +140,7 @@
         </div>
         <div><img src="../ico/darkmode.png" id="icon" alt="icon" /></div>
         <div>
-          <a href="#" class="nav__link"
-            ><img src="../ico/bot.png" alt="bot"
-          /></a>
+          <a href="#" class="nav__icon"><i class='bx bxs-chat bx-tada' ></i></a></div></a>
         </div>
         <a href="../form/index.html" class="button">Masuk</a>
         <div class="nav__menu" id="nav-menu">

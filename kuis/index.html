@@ -89,7 +89,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
     <script src="script.js" defer></script>
@@ -107,9 +107,9 @@
         </div>
         <div><img src="../ico/darkmode.png" id="icon" alt="icon" /></div>
         <div>
-          <a href="../bot/index.html" class="nav__link"
-            ><img src="../ico/bot.png" alt="bot"
-          /></a>
+          <a href="../bot/index.html" class="nav__icon"
+            ><i class="bx bxs-chat bx-tada"></i
+          ></a>
         </div>
         <a href="../form/index.html" class="button">Masuk</a>
         <div class="nav__menu" id="nav-menu">
@@ -136,48 +136,28 @@
       <!--===== MENU UTAMA =====-->
       <section class="home bd-grid">
         <div id="quiz">
-            <div class="quiz-header">
-                <h2 id="question">Kuis</h2>
-                <ul>
-                    <li>
-                        <input
-                            type="radio"
-                            id="a"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="a_text" for="a">Pilihan 1</label>
-                    </li>
-                    <li>
-                        <input
-                            type="radio"
-                            id="b"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="b_text" for="b">Pilihan 2</label>
-                    </li>
-                    <li>
-                        <input
-                            type="radio"
-                            id="c"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="c_text" for="c">Pilihan 3</label>
-                    </li>
-                    <li>
-                        <input
-                            type="radio"
-                            id="d"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="d_text" for="d">Pilihan 4</label>
-                    </li>
-                </ul>
-            </div>
-            <button id="submit">Submit</button>
+          <div class="quiz-header">
+            <h2 id="question">Kuis</h2>
+            <ul>
+              <li>
+                <input type="radio" id="a" name="answer" class="answer" />
+                <label id="a_text" for="a">Pilihan 1</label>
+              </li>
+              <li>
+                <input type="radio" id="b" name="answer" class="answer" />
+                <label id="b_text" for="b">Pilihan 2</label>
+              </li>
+              <li>
+                <input type="radio" id="c" name="answer" class="answer" />
+                <label id="c_text" for="c">Pilihan 3</label>
+              </li>
+              <li>
+                <input type="radio" id="d" name="answer" class="answer" />
+                <label id="d_text" for="d">Pilihan 4</label>
+              </li>
+            </ul>
+          </div>
+          <button id="submit">Submit</button>
         </div>
       </section>
     </main>
