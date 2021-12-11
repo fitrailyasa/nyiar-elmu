@@ -209,7 +209,7 @@ form.search::after {
 }
 .nav__logo {
   color: var(--second-color);
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 .nav__toggle {
   color: var(--first-color);
