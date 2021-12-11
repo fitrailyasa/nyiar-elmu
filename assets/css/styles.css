@@ -209,6 +209,7 @@ form.search::after {
 }
 .nav__logo {
   color: var(--second-color);
+  font-size: 0.7rem;
 }
 .nav__toggle {
   color: var(--first-color);
@@ -216,8 +217,11 @@ form.search::after {
   cursor: pointer;
 }
 .nav__icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--first-color);
+}
+#icon {
+  width: 1.5rem;
 }
 
 /*Menu aktif*/
@@ -273,7 +277,7 @@ form.search::after {
 
 /*BUTTONS*/
 .button {
-  font-size: 12px;
+  font-size: 10px;
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
@@ -420,7 +424,13 @@ form.search::after {
     color: var(--second-color);
   }
   .nav__icon {
-    font-size: 2rem;
+    font-size: 1.7rem;
+  }
+  .nav__logo {
+    font-size: 1rem;
+  }
+  #icon {
+    width: 2rem;
   }
 
   .button {
