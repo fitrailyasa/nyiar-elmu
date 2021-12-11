@@ -93,39 +93,7 @@
       rel="stylesheet"
     />
 
-    <script>
-      var msg = {
-        HALO: "Hai!",
-		    HALLO: "Hai!",
-        HAI: "Halo!",
-        HI: "Halo!",
-        P: "Iya, kenapa?",
-        ASSALAMUALAIKUM: "Waalaikumsalam",
-		    "NAMA KAMU SIAPA?": "Nama saya Dico!",
-        "LAGI APA?": "Kepo!",
-        "LAGI DIMANA?": "Lubuk hatimu wkwkwkw...",
-        "UDAH MAKAN?": "Ciee perhatiaaannn...!!!",
-        "SUDAH MAKAN?": "Ciee perhatiaaannn...!!!",
-      };	  
-
-      function talk() {
-        var user = document.getElementById("data").value;
-		    var kapital_user = user.toUpperCase();
-        document.getElementById("chatLog").innerHTML +=
-          '<div class="user-inbox inbox"><div class="msg-header"><p>' +
-          user +
-          '</p></div></div>';
-        if (kapital_user in msg) {
-          document.getElementById("chatLog").innerHTML +=
-            '<div class="bot-inbox inbox"><div class="msg-header"><p>' +
-            msg[kapital_user] +
-            "</p></div></div>";
-        } else {
-          document.getElementById("chatLog").innerHTML +=
-            '<div class="bot-inbox inbox"><div class="msg-header"><p>Maaf saya tidak mengerti apa yang anda katakan.</p></div></div>';
-        }
-      }
-    </script>
+    <script  src="script.js" defer></script>
 
     <title>DicoBot</title>
   </head>
@@ -134,11 +102,8 @@
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="#" class="nav__logo"
-            ><img src="../ico/apple-touch-icon-60x60.png" alt="logo"
-          /></a>
+          <a href="#" class="nav__logo"><h2><span class="home__title-color">Nyiar</span> Elmu</h2></a>
         </div>
-        <div><img src="../ico/darkmode.png" id="icon" alt="icon" /></div>
         <div>
           <a href="#" class="nav__icon"><i class='bx bxs-bot'></i></a></div></a>
         </div>
@@ -158,6 +123,7 @@
             </li>
           </ul>
         </div>
+        <div><img src="../ico/darkmode.png" id="icon" alt="icon" /></div>
         <a href="../form/index.html" class="button">Masuk</a>
         <div class="nav__toggle" id="nav-toggle">
           <i class="bx bx-menu"></i>
@@ -192,38 +158,6 @@
         <div></div>
       </section>
     </main>
-
-    <!--===== BAGIAN BAWAH (KAKI) =====-->
-    <footer class="footer">
-      <p class="footer__title">Fitra Ilyasa</p>
-      <div class="footer__social">
-        <a
-          href="https://facebook.com/fitrailyasa12"
-          target="_blank"
-          class="footer__icon"
-          ><i class="bx bxl-facebook"></i
-        ></a>
-        <a
-          href="https://instagram.com/fitrailyasa"
-          target="_blank"
-          class="footer__icon"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a
-          href="https://twitter.com/fitrailyasa12"
-          target="_blank"
-          class="footer__icon"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a
-          href="https://youtube.com/c/fitrailyasa"
-          target="_blank"
-          class="footer__icon"
-          ><i class="bx bxl-youtube"></i
-        ></a>
-      </div>
-      <p>&#169; 2019-2021 || Fitra Ilyasa</p>
-    </footer>
 
     <!--===== JAVASCRIPT =====-->
     <script src="../assets/js/main.js"></script>
